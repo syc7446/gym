@@ -289,6 +289,20 @@ register(
 )
 
 register(
+    id='Swimmer-v4',
+    entry_point='gym.envs.mujoco:Swimmer4PartsEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+
+register(
+    id='Swimmer-v5',
+    entry_point='gym.envs.mujoco:Swimmer5PartsEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+
+register(
     id='Walker2d-v2',
     max_episode_steps=1000,
     entry_point='gym.envs.mujoco:Walker2dEnv',
